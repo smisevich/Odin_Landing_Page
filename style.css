@@ -121,7 +121,7 @@ Info Section
 
 .info-section {
   text-align: center;
-  padding: 36px 0;
+  padding: 36px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -134,12 +134,16 @@ Info Section
   color: #1f2937;
 }
 
+.info-section p {
+  color: #1f2937;
+}
+
 .container {
   padding: 0 120px;
   display: flex;
   flex: 1;
   justify-content: center;
-  gap: 80px;
+  gap: 50px;
   flex-wrap: wrap;
 }
 
@@ -153,9 +157,18 @@ Info Section
 }
 
 .tile-image {
-  border: 1px solid #1f2937;
+  /* border: 1px solid #1f2937; */
   height: 125px;
   width: 125px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.tile-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
   border-radius: 8px;
 }
 
